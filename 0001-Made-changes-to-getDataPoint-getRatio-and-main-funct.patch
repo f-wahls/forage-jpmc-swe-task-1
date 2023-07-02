@@ -21,7 +21,7 @@ Subject: [PATCH] Made changes to getDataPoint, getRatio, and main function.
 -    return 1
 +    if price_b == 0:
 +        # Avoid throwing ZeroDivisionError when price_b is 0
-+        return None
++        return 
 +    
 +    return price_a / price_b
  
